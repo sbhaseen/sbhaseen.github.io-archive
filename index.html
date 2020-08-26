@@ -1,0 +1,151 @@
+---
+layout: default
+---
+
+<section class="intro page-header">
+  <div class="profile">
+    {% for person in site.person %}
+    <img src="{{ person.pic }}" class="profile-image" alt="person" />
+    <h1>{{ person.name }}</h1>
+    {% endfor %}
+  </div>
+  <div class="welcome-text">
+    <h2>Hi there!</h2>
+    <h3>Welcome to my GitHub Page!</h3>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-heading ">About</h2>
+
+  <div class="about-layout">
+    <div class="about-text">
+      <p>
+        I love science and technology! It's the reason why I studied
+        engineering. I currently live in Toronto and am focused on web apps and
+        interactive software. In my spare time I like to tinker with various
+        tech, including robotics and game engines.
+      </p>
+      <p class="text-subtle">
+        I also enjoy travelling and visiting the great cities of the world.
+      </p>
+    </div>
+    <img src="/images/about_1.jpg" class="about-image" alt="travel image" />
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2 class="section-heading ">Skills</h2>
+
+  <div class="skills-container">
+    <div class="skills-layout">
+      <div class="skills-set">
+        <h3>Programming</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/csharp_ico.png" alt="" />
+            <figcaption>C#</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/java_ico.svg" alt="" />
+            <figcaption>Java</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/python_ico.svg" alt="" />
+            <figcaption>Python</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="skills-set">
+        <h3>Web Development</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/html_ico.svg" alt="" />
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/css_ico.svg" alt="" />
+            <figcaption>CSS/SASS</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/js_ico.svg" alt="" />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="skills-set">
+        <h3>Web Frameworks</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/express_ico.png" alt="" />
+            <figcaption>(Node.js)</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/django_ico.svg" alt="" />
+            <figcaption>(Python)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skills-set">
+        <h3>Tools</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/VS_Code_icon.svg" alt="" />
+            <figcaption>VS Code</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/git_ico.png" alt="" />
+            <figcaption>Git</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="skills-set">
+        <h3>Databases</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/postgresql_ico.svg" alt="" />
+            <figcaption>PostgreSQL</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/MongoDB-ico.svg" alt="" />
+            <figcaption>MongoDB</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="skills-set">
+        <h3>Platforms</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/aws_ico.svg" alt="" />
+            <figcaption>AWS</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/heroku_ico.svg" alt="" />
+            <figcaption>Heroku</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skills-set">
+        <h3>Hobby</h3>
+        <div class="skills-group">
+          <figure>
+            <img src="images/ico/Arduino_ico.svg" alt="" />
+            <figcaption>Arduino</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ico/Unity_ico.svg" alt="" />
+            <figcaption>Unity Game Engine</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button><a href="{{ site.baseurl }}/blog">See Projects</a></button>
+</section>

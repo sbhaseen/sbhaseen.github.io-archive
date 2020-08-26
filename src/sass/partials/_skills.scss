@@ -1,0 +1,55 @@
+.skills {
+  min-height: 100vh;
+}
+
+.skills-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.skills-set {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.skills-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  figure {
+    padding: 1rem;
+  }
+
+  figure img {
+    height: 50px;
+    transition: transform 300ms ease;
+  }
+
+  figure img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@include mq {
+  .skills-layout {
+    flex-direction: row;
+  }
+
+  .skills-group {
+    flex-wrap: nowrap;
+  }
+}

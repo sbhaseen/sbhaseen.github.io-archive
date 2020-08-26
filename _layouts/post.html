@@ -1,0 +1,31 @@
+---
+layout: page
+---
+
+<section class="post-info page-header">
+  <h1>{{ page.title }}</h1>
+  <hr />
+  <h2>
+    {{ page.date | date_to_long_string }}
+  </h2>
+  <hr />
+  <div>
+    {% for tag in page.tags %} {% if forloop.first == true %} Tags:
+    <post-tag>
+      {{ tag }}
+    </post-tag>
+    {% else %}
+    <post-tag>{{ tag }}</post-tag>
+    {% endif %} {% endfor %}
+  </div>
+</section>
+
+<section class="post-content">
+  {{ content }}
+
+  <div class="button-container">
+    <button>
+      <a href="{{ '/blog' | prepend: site.baseurl }}">Back To Blog</a>
+    </button>
+  </div>
+</section>

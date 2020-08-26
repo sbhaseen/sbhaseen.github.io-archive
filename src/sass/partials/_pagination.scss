@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.page-item.disabled .page-link {
+  cursor: auto;
+  color: var(--clr-dark);
+  pointer-events: none;
+  background-color: inherit;
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+  margin-right: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.page-link:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.page-link {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: var(--clr-dark);
+  background-color: var(--clr-primary);
+  border: 1px solid var(--clr-neutral);
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: var(--clr-light);
+  background-color: var(--clr-links);
+  border-color: var(--clr-primary);
+}

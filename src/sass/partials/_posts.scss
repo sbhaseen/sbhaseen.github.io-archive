@@ -1,0 +1,90 @@
+.page-header {
+  text-align: center;
+}
+
+.post-highlights {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.post-highlights-item {
+  padding: 0.5em 0;
+}
+
+.post-highlights-item a {
+  padding: 0.5em 0;
+}
+
+.post-highlights-item p {
+  text-align: left;
+  padding: 0.5em 0;
+}
+
+section.post-info {
+  display: block;
+}
+
+.post-info hr {
+  max-width: 50px;
+  margin: 0.25em auto;
+}
+
+post-tag {
+  padding: 3px;
+  margin: 0 3px;
+  line-height: 2;
+  color: #0069d9;
+  border: 1px solid #0069d9;
+  border-radius: 0.25rem;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  cursor: default;
+}
+
+post-tag:hover {
+  color: white;
+  background-color: #0069d9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.post-content {
+  text-align: left;
+  display: block;
+}
+
+.post-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.post-content p {
+  padding: 1em 0;
+}
+
+.post-content ul {
+  padding: 0.5em 1em;
+  margin: 0 1em;
+}
+
+.post-content li > ul {
+  padding: 1em;
+}
+
+.post-content hr {
+  margin: 1em 0;
+}
+
+.post-content div {
+  padding: 0.5em;
+  overflow: auto;
+}
+
+.post-content button {
+  margin: 0 auto;
+}
+
+.post-content img {
+  max-width: 100%;
+  margin: 1em auto;
+}

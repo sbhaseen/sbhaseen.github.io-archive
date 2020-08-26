@@ -1,0 +1,42 @@
+.about {
+  min-height: 50vh;
+  background: linear-gradient(
+    to bottom,
+    var(--clr-primary),
+    var(--clr-neutral)
+  );
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  text-align: left;
+
+  p {
+    padding: 1em;
+  }
+}
+
+.about-image {
+  height: 250px;
+  border-radius: 5px;
+}
+
+img.about-image {
+  object-fit: cover;
+}
+
+@include mq {
+  .about-layout {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about-text {
+    width: 50%;
+  }
+}

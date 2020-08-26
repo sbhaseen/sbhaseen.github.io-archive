@@ -1,0 +1,34 @@
+.table-wrapper {
+  overflow: auto;
+}
+
+table {
+  --table-zebra-dark: darkgray;
+  --table-zebra-light: lightgray;
+
+  text-align: center;
+  width: 100%;
+
+  border-collapse: collapse;
+
+  border: 1px solid var(--table-zebra-dark);
+  table-layout: auto;
+}
+
+th,
+tr:nth-child(even) {
+  background-color: var(--table-zebra-light);
+}
+
+th {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--table-zebra-dark);
+}
+
+td {
+  padding: 0.5rem 0;
+}
+
+td > .btn {
+  margin: 4px;
+}

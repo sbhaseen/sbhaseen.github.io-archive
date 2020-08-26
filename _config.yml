@@ -1,0 +1,24 @@
+title: Shan Bhaseen
+description: Projects and profile
+baseurl: ''
+url: ''
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/blog/page:num/'
+
+person:
+  - name: Shan Bhaseen
+    pic: https://avatars3.githubusercontent.com/u/32348723?s=460&v=4
+
+exclude:
+  - package.json
+  - package-lock.json
+  - node_modules
+  - gulpfile.js
+  - src
