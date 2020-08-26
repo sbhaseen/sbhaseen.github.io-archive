@@ -1,5 +1,6 @@
 # sbhaseen.github.io
 
+This is the archive of the Jekyll based static blog site.
 My portfolio website, hosted by GitHub Pages.
 
 ## Getting Started
